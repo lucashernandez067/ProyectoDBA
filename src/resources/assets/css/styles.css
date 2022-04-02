@@ -1,0 +1,126 @@
+* {
+  font-family: Verdana, Genova, Tahoma, sans-serif;
+  font-size: 15px;
+}
+body{
+  position: relative;
+}
+body#formUser{
+  background-image: url('../img/fondos/living-room.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.register-container{
+  background-color: #000000AA;
+  padding: 15px;
+}
+
+.login-container{
+  margin: 0 auto;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-width: 700px;  
+}
+
+.logInForm{
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+  min-height: 350px;
+
+  background-color: #000000AA;
+  color: #fff;
+  padding: 15px;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 4px;
+}
+.link-decorated:focus{
+  border-bottom: 1px skyblue solid;
+}
+.bg-coffee{
+  background-color: #8C6764;
+}
+.bg-brown {
+  background-color: #734136;
+}
+/* Clase para el Blog del Index */
+.main-header{
+  position: relative;
+  background-size: cover;
+  min-height: 500px;
+}
+section#formSection{
+  position: relative;
+  background-size: cover;
+  min-height: 1200px;
+}
+/* Clase de la cobertura del main-header */
+.background-overlay{
+  position: absolute;
+  background-color: rgb(117, 84, 81,.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Botón central del Blog del Index */
+.btn-outline-coffee{
+  color: #8C6764;
+  border-color: #8C6764;
+}
+.btn-outline-coffee:hover {
+  color: #fff;
+  background-color: #8C6764;
+  border-color: #8C6764;
+}
+
+a.btn-link-access {
+  text-decoration: none;
+  color: white;
+}
+
+a.btn-link-access:focus {
+  padding: 0em;
+  margin: 0em;
+  text-decoration: none;
+  background-color: #734136;
+  color: white;
+}
+
+.btn-coffee {
+  background-color: #8C6764;
+  color: white;
+}
+
+.btn-coffee:hover {
+  background-color: rgb(117, 84, 81);
+  color: white;
+  border: solid 1px white;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+h1#titleBlog{
+  font-style: italic;
+}
+
+p#text-copyright{
+  font-size: 1em;
+}

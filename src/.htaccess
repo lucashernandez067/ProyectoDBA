@@ -1,0 +1,6 @@
+#Options +FollowSymLinks
+RewriteEngine on
+RewriteRule ^([-a-zñÑA-Záéíóú0-9]+)/([0-9]+)$ index.php?c=$1&id=$2
+RewriteRule ^([-a-zñÑA-Záéíóú0-9]+)/([-a-zñÑA-Záéíóú]+)$ index.php?c=$1&m=$2
+RewriteRule ^([-a-zñÑA-Záéíóú0-9]+)/([-a-zñÑA-Záéíóú]+)/([0-9]+)$ index.php?c=$1&m=$2&id=$3
+RewriteRule ^([-a-zñÑA-Záéíóú0-9]+)$ index.php?c=$1

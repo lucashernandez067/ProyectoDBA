@@ -1,0 +1,95 @@
+<style>
+    .opacar{
+        background: rgba(0, 0, 0, 0.699);
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        transition: all .5s;
+        z-index: 5000;
+    }
+    @keyframes loader {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+
+    @keyframes loader2 {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(-360deg);
+        }
+    }
+
+    #pantalla_carga {
+        box-sizing: border-box;
+        /*background-color: rgba(122, 122, 122, 0.808);*/
+    }
+
+    #contenedor_carga {
+        position: fixed;
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        padding: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10000;
+
+    }
+
+    #contenedor_carga .carga {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        border: inset 7.5px transparent;
+        border-top-color: #03a9f4;
+        border-left-color: #03a9f4;
+        border-radius: 49%;
+        animation: loader 1.1s linear infinite;
+    }
+
+    #contenedor_carga .carga2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 70%;
+        height: 70%;
+        border: outset 7px transparent;
+        border-top-color: #03a9f4;
+        border-left-color: #03a9f4;
+        border-radius: 49%;
+        animation: loader2 1.1s linear infinite;
+    }
+</style>
+
+<div id="pantalla_carga" class="opacar">
+    <div id="contenedor_carga">
+        <div class="carga"></div>
+        <div class="carga2"></div>
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        var myVar = setInterval(myTimer, 500);
+
+        function myTimer() {
+            document.getElementById("contenedor_carga").style.visibility = 'hidden';
+            document.getElementById("contenedor_carga").style.opacity = '0';
+            document.getElementById('pantalla_carga').classList.remove("opacar");
+        }
+    }
+</script>
